@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora v2.0</title>
+
+    <link rel="stylesheet" href="estilosCalculadora.css">
+
+</head>
+<body>
+    <section class="main">
+
+        <div class="zonaIzq">
+            <h1>Calculadora v2.0</h1>
+            <h2>HTML-CSS-Javascript</h2>
+        </div>
+
+        <div class="zonaDer">
+            <fieldset class="cuerpo">
+                <div class="contenedor-numerosYOperaciones">
+                    <input type="text" class="numero1" id="numero1" placeholder="1er Número">
+                    <div class="contenedor-operacion">
+                        <!-- ELEGIR RADIO -->
+                        <input type="radio" name="operacion" id="suma" value="sum">
+                        <label for="suma">+</label>
+                        <input type="radio" name="operacion" id="resta" value="res">
+                        <label for="resta">-</label>
+                        <input type="radio" name="operacion" id="multiplicacion" value="mul">
+                        <label for="multiplicacion">x</label>
+                        <input type="radio" name="operacion" id="division" value="divi">
+                        <label for="division">/</label>
+                    </div>
+                    <input type="text" class="numero2" id="numero2" placeholder="2er Número">
+                </div>
+                
+                <div class="contenedor-resultado">
+                    <input type="text" class="input-resultado" id="resultado" readonly>
+                </div>
+                <div class="contenedor-calcular">
+                    <input type="button" id="btn-calcular" class="btn-calcular" value="Resultado" onclick="operar()">
+                </div>
+            </fieldset>     
+        </div>
+
+    </section>
+    <script src="scriptCalculadora.js"></script>
+</body>
+</html>
